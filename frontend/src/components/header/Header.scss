@@ -1,0 +1,14 @@
+// logoContainer classes
+header {
+  display: flex;
+  align-items: center;
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-size: calc((100vw - 480px) / (1280 - 48) * (34 - 16) + 16px);
+      font-weight: bold;
+    }
+  }
+}

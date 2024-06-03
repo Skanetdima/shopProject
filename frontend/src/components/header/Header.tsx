@@ -5,7 +5,7 @@ const HeaderComponent = () => {
   return (
     <>
       <header>
-        <div className="logoContainer">
+        <div className="headerLogoContainer">
           <img src="/favicon.svg" alt="" />
           <span>Furniro</span>
         </div>
@@ -15,6 +15,18 @@ const HeaderComponent = () => {
           <a href="#">About</a>
           <a href="#">Contact</a>
         </nav>
+        <div className="headerUserInfo">
+          <a
+            style={{
+              background:
+                "url(/account-alert-outline.svg) 100% center/contain no-repeat",
+            }}
+            href=""
+          ></a>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+        </div>
       </header>
     </>
   );

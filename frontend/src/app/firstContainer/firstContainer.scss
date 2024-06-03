@@ -1,0 +1,35 @@
+$background-first-color: #fff3e3;
+$primary-color: #b88e2f;
+$primary-button-weight: bold;
+$primary-overline-weight: 600;
+
+.firstContainer {
+  background: url("/firstContainerBackground.png") no-repeat center/cover;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5vw 2vw;
+  .firstContainerItem {
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 2vw;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5vw;
+    background-color: $background-first-color;
+    span {
+      font-weight: $primary-overline-weight;
+    }
+    h1 {
+      font-size: calc((100vw - 480px) / (1280 - 48) * (55 - 32) + 32px);
+      color: $primary-color;
+    }
+    .firstBuyNowBtn {
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: $primary-button-weight;
+      padding: 1.5vw 3vw;
+      background-color: $primary-color;
+    }
+  }
+}

@@ -1,3 +1,4 @@
+import { FirstContainer } from "./firstContainer/firstContainer";
 import "./index.scss";
 import HeaderComponent from "@/components/header/Header";
 
@@ -6,7 +7,7 @@ export default function Home() {
     <>
       <HeaderComponent />
       <main>
-        <h2>hello world!</h2>
+        <FirstContainer />
       </main>
     </>
   );

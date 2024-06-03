@@ -1,6 +1,6 @@
-// logoContainer classes
 header {
   display: flex;
+  padding: 1vw 2vw;
   align-items: center;
   justify-content: space-between;
   .headerLogoContainer {
@@ -10,6 +10,19 @@ header {
     span {
       font-size: calc((100vw - 480px) / (1280 - 48) * (34 - 16) + 16px);
       font-weight: bold;
+    }
+  }
+  nav {
+    display: flex;
+    gap: 3vw;
+  }
+  .headerUserInfo {
+    display: flex;
+    gap: 2vw;
+    a {
+      display: block;
+      width: 16px;
+      height: 16px;
     }
   }
 }

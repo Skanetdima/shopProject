@@ -19,13 +19,28 @@ const HeaderComponent = () => {
           <a
             style={{
               background:
-                "url(/account-alert-outline.svg) 100% center/contain no-repeat",
+                "url(/account-alert-outline.svg) no-repeat center/contain",
             }}
-            href=""
+            href="#"
           ></a>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
+          <a
+            style={{
+              background: "url(/header-search.svg) no-repeat center/contain",
+            }}
+            href="#"
+          ></a>
+          <a
+            style={{
+              background: "url(/header-heart.svg) no-repeat center/contain",
+            }}
+            href="#"
+          ></a>
+          <a
+            style={{
+              background: "url(/header-shop.svg) no-repeat center/contain",
+            }}
+            href="#"
+          ></a>
         </div>
       </header>
     </>

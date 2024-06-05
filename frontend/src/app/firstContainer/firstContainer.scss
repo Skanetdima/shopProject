@@ -1,7 +1,4 @@
-$background-first-color: #fff3e3;
-$primary-color: #b88e2f;
-$primary-button-weight: bold;
-$primary-overline-weight: 600;
+@use "../styles/variables.scss" as *;
 
 .firstContainer {
   background: url("/firstContainerBackground.png") no-repeat center/cover;

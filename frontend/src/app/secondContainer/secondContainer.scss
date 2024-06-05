@@ -1,0 +1,28 @@
+@use "../styles/variables.scss" as *;
+
+.secondContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5vw;
+  span {
+    color: $second-span-color;
+  }
+  ul {
+    padding-top: 2vw;
+    display: flex;
+    gap: 1vw;
+    li {
+      text-align: center;
+      p {
+        font-weight: $primary-overline-weight;
+      }
+      div {
+        border-radius: 10px;
+        width: 16vw;
+        height: 21vw;
+        margin-bottom: 1vw;
+      }
+    }
+  }
+}

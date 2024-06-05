@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "./reset.css";
-import "./globals.scss";
+import "./styles/reset.css";
 
 // Initialize the Poppins font with desired subsets
 const poppins = Poppins({

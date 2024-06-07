@@ -1,18 +1,25 @@
 import React from "react";
+import { Poppins } from "next/font/google";
 import "./Header.scss";
+import Link from "next/link";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 const HeaderComponent = () => {
   return (
     <>
-      <header>
+      <header className={poppins.className}>
         <div className="headerLogoContainer">
           <img src="/favicon.svg" alt="" />
           <span>Furniro</span>
         </div>
         <nav>
-          <a href="#">Home</a>
+          <Link href="/">Home</Link>
           <a href="#">Shop</a>
-          <a href="#">About</a>
+          <Link href="/about">About</Link>
           <a href="#">Contact</a>
         </nav>
         <div className="headerUserInfo">

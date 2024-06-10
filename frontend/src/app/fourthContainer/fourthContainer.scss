@@ -1,0 +1,58 @@
+@use "../styles/variables.scss" as *;
+
+.fourthContainer {
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: $primary-color;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.5
+    ); // Optional: add a background color with opacity
+    border-radius: 50%; // Optional: make the background a circle
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; // Add a transition for hover effect
+
+    &:hover {
+      background-color: rgba(
+        255,
+        255,
+        255,
+        0.8
+      ); // Change background color on hover
+    }
+  }
+
+  .swiper-button-prev {
+    left: 10px; // Adjust the position
+  }
+
+  .swiper-button-next {
+    right: 10px; // Adjust the position
+  }
+
+  .swiper-pagination-bullet {
+    background: url("/pagination.svg") no-repeat center;
+    opacity: 0.7;
+    margin: 0 4px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: url("/paginationActive.svg") no-repeat center;
+    opacity: 1;
+    border: 1px solid $primary-color;
+    padding: 0.75vw;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+}

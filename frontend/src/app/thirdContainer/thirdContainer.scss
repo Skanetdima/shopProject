@@ -11,7 +11,13 @@
   a {
     color: $primary-color;
     border: 1px solid $primary-color;
-    padding: 0.75vw 3vw;
+    padding: 0.75vw 5vw;
+    transition: 0.4s ease-in-out;
+  }
+  a:hover,
+  a:active {
+    color: white;
+    background-color: $primary-color;
   }
   ul {
     display: flex;

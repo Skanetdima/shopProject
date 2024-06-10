@@ -1,0 +1,58 @@
+export const thirdComponents = [
+  {
+    img: "/image_1.png",
+    h3: "Syltherine",
+    p: "Stylish cafe chair",
+    span: "Rp 2.500.000",
+    spanOld: "Rp 3.500.000",
+  },
+  {
+    img: "/image_1.png",
+    h3: "Syltherine",
+    p: "Stylish cafe chair",
+    span: "Rp 2.500.000",
+    spanOld: "Rp 3.500.000",
+  },
+  {
+    img: "/image_1.png",
+    h3: "Syltherine",
+    p: "Stylish cafe chair",
+    span: "Rp 2.500.000",
+    spanOld: "Rp 3.500.000",
+  },
+  {
+    img: "/image_1.png",
+    h3: "Syltherine",
+    p: "Stylish cafe chair",
+    span: "Rp 2.500.000",
+    spanOld: "Rp 3.500.000",
+  },
+  {
+    img: "/image_1.png",
+    h3: "Syltherine",
+    p: "Stylish cafe chair",
+    span: "Rp 2.500.000",
+    spanOld: "Rp 3.500.000",
+  },
+  {
+    img: "/image_1.png",
+    h3: "Syltherine",
+    p: "Stylish cafe chair",
+    span: "Rp 2.500.000",
+    spanOld: "Rp 3.500.000",
+  },
+  {
+    img: "/image_1.png",
+    h3: "Syltherine",
+    p: "Stylish cafe chair",
+    span: "Rp 2.500.000",
+    spanOld: "Rp 3.500.000",
+  },
+  {
+    img: "/image_1.png",
+    h3: "Syltherine",
+    p: "Stylish cafe chair",
+    span: "Rp 2.500.000",
+    spanOld: "Rp 3.500.000",
+  },
+];

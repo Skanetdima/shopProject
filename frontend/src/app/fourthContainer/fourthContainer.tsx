@@ -4,7 +4,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
-import "./fourthContainer.scss";
+import styles from "./fourthContainer.module.scss";
+import "./swiper.scss";
 import { Pagination, Navigation, EffectCoverflow } from "swiper/modules";
 import { fourthData } from "./data";
 
@@ -14,7 +15,7 @@ export const FourthContainer = () => {
       <SwiperSlide key={index}>
         <div>
           <img src={obj.img} alt="" />
-          <div className="slideCaption">
+          <div className={styles.slideCaption}>
             <h3>{obj.h3}</h3>
             <p>{obj.p}</p>
           </div>
@@ -23,8 +24,8 @@ export const FourthContainer = () => {
     );
   });
   return (
-    <div className="fourthContainer">
-      <div className="fourthTextContainer">
+    <div className={styles.fourthContainer}>
+      <div className={styles.fourthTextContainer}>
         <h2>50+ Beautiful rooms inspiration</h2>
         <p>
           Our designer already made a lot of beautiful prototipe of rooms that
@@ -47,7 +48,7 @@ export const FourthContainer = () => {
         navigation={true}
         pagination={true}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="mySwiper"
+        className={styles.swiper}
       >
         {sliderData}
       </Swiper>

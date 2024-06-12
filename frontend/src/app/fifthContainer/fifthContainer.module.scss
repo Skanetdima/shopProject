@@ -1,0 +1,9 @@
+.fifthContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h2 {
+    font-size: calc((100vw - 480px) / (1280 - 48) * (50 - 18) + 18px);
+  }
+}

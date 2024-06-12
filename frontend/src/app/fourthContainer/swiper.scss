@@ -1,37 +1,7 @@
 @use "../styles/variables.scss" as *;
 
-.fourthContainer {
-  display: flex;
-  padding: 5vw;
-  background: $fourth_background;
-
-  .fourthTextContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 2vw;
-    h2 {
-      font-size: calc((100vw - 480px) / (1280 - 48) * (50 - 20) + 20px);
-    }
-    p {
-      max-width: calc((100vw - 480px) / (1280 - 48) * (60 - 20) + 20vw);
-    }
-    a {
-      text-transform: uppercase;
-      color: #fff;
-      font-weight: $primary-button-weight;
-      padding: 1.5vw 3vw;
-      background-color: $primary-color;
-      transition: 0.4s ease-in-out;
-      border: 1px solid transparent;
-    }
-    a:hover {
-      background-color: transparent;
-      border: 1px solid $primary-color;
-      color: $primary-color;
-    }
-  }
+.swiper {
+  max-width: 50%;
 
   .swiper-button-next,
   .swiper-button-next::after {
@@ -51,14 +21,11 @@
       background-color: rgba(255, 255, 255, 0.8);
     }
   }
+
   .swiper-button-prev::after,
   .swiper-button-prev {
     display: none;
   }
-  .swiper {
-    max-width: 50%;
-  }
-
   .swiper-button-prev {
     left: 10px;
   }

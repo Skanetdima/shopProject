@@ -3,6 +3,7 @@ import { FirstContainer } from "../app/firstContainer/firstContainer";
 import { SecondContainer } from "../app/secondContainer/secondContainer";
 import { ThirdContainer } from "../app/thirdContainer/thirdContainer";
 import Head from "next/head";
+import { FifthContainer } from "@/app/fifthContainer/fifthContainer";
 
 const Home: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
         <SecondContainer />
         <ThirdContainer />
         <FourthContainer />
+        <FifthContainer />
       </main>
     </>
   );

@@ -1,39 +1,70 @@
 @use "../styles/variables.scss" as *;
 
 .fourthContainer {
-  .swiper-button-prev,
-  .swiper-button-next {
-    color: $primary-color;
-    background-color: rgba(
-      255,
-      255,
-      255,
-      0.5
-    ); // Optional: add a background color with opacity
-    border-radius: 50%; // Optional: make the background a circle
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s ease; // Add a transition for hover effect
+  display: flex;
+  padding: 5vw;
+  background: $fourth_background;
 
-    &:hover {
-      background-color: rgba(
-        255,
-        255,
-        255,
-        0.8
-      ); // Change background color on hover
+  .fourthTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2vw;
+    h2 {
+      font-size: calc((100vw - 480px) / (1280 - 48) * (50 - 20) + 20px);
+    }
+    p {
+      max-width: calc((100vw - 480px) / (1280 - 48) * (60 - 20) + 20vw);
+    }
+    a {
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: $primary-button-weight;
+      padding: 1.5vw 3vw;
+      background-color: $primary-color;
+      transition: 0.4s ease-in-out;
+      border: 1px solid transparent;
+    }
+    a:hover {
+      background-color: transparent;
+      border: 1px solid $primary-color;
+      color: $primary-color;
     }
   }
 
+  .swiper-button-next,
+  .swiper-button-next::after {
+    color: $primary-color;
+    content: "";
+    background: url("/navigationBtn.svg") no-repeat center
+      rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  .swiper-button-prev::after,
   .swiper-button-prev {
-    left: 10px; // Adjust the position
+    display: none;
+  }
+  .swiper {
+    max-width: 50%;
+  }
+
+  .swiper-button-prev {
+    left: 10px;
   }
 
   .swiper-button-next {
-    right: 10px; // Adjust the position
+    right: 10px;
   }
 
   .swiper-pagination-bullet {
@@ -54,5 +85,14 @@
     justify-content: center;
     align-items: center;
     font-size: 18px;
+  }
+  .slideCaption {
+    position: absolute;
+    bottom: calc((100vw - 480px) / (1280 - 48) * (55 - 32) + 40px);
+    right: calc((100vw - 480px) / (1280 - 48) * (55 - 32) + 10vw);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
   }
 }

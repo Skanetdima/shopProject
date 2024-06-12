@@ -27,6 +27,13 @@
       font-weight: $primary-button-weight;
       padding: 1.5vw 3vw;
       background-color: $primary-color;
+      transition: 0.4s ease-in-out;
+      border: 1px solid transparent;
+    }
+    .firstBuyNowBtn:hover {
+      background-color: transparent;
+      border: 1px solid $primary-color;
+      color: $primary-color;
     }
   }
 }

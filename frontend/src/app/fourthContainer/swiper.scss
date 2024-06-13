@@ -53,13 +53,4 @@
     align-items: center;
     font-size: 18px;
   }
-  .slideCaption {
-    position: absolute;
-    bottom: calc((100vw - 480px) / (1280 - 48) * (55 - 32) + 40px);
-    right: calc((100vw - 480px) / (1280 - 48) * (55 - 32) + 10vw);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-  }
 }

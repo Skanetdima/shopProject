@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import "../app/styles/reset.css";
 import HeaderComponent from "@/components/header/Header";
 import Head from "next/head";
+import { FooterComponent } from "./footer/footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -19,6 +20,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       </Head>
       <HeaderComponent />
       <div className={poppins.className}>{children}</div>
+      <FooterComponent />
     </>
   );
 };

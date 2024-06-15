@@ -18,7 +18,7 @@ const HeaderComponent = () => {
         </div>
         <nav>
           <Link href="/">Home</Link>
-          <a href="#">Shop</a>
+          <Link href="/shop">Shop</Link>
           <Link href="/about">About</Link>
           <a href="#">Contact</a>
         </nav>

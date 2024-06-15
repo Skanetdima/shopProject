@@ -1,0 +1,10 @@
+.firstContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 5vw;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-size: calc((100vw - 480px) / (1280 - 48) * (50 - 23) + 23px);
+  }
+}

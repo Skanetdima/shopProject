@@ -5,7 +5,10 @@ export const ThirdContainer = () => {
   const ulItems = thirdComponents.map((obj, index) => {
     return (
       <li key={index}>
-        <div style={{ background: `url(${obj.img})` }}></div>
+        <div
+          className="thirdItemImage"
+          style={{ background: `url(${obj.img}) no-repeat center/cover` }}
+        ></div>
         <section>
           <h3>{obj.h3}</h3>
           <p>{obj.p}</p>
@@ -13,6 +16,9 @@ export const ThirdContainer = () => {
             {obj.span} <s>{obj.spanOld}</s>
           </span>
         </section>
+        <div className="thirdOverlay">
+          <a href="/">Add to cart</a>
+        </div>
       </li>
     );
   });

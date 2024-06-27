@@ -3,12 +3,14 @@ import styles from "./firstShopContainer.module.scss";
 export const FirstShopContainer = () => {
   return (
     <div
-      className={styles.firstContainer}
+      className={styles.firstShopContainer}
       style={{ background: "url(/shopPreview.png) no-repeat center/cover" }}
     >
-      <h1>Shop</h1>
+      <a className={styles.h1Link} href="/shop">
+        Shop
+      </a>
       <span>
-        <b>{"Home >"}</b> Shop
+        <a href="/">{"Home >"}</a> Shop
       </span>
     </div>
   );

@@ -1,10 +1,24 @@
-.firstContainer {
+@use "../styles/variables.scss" as *;
+.firstShopContainer {
   display: flex;
   flex-direction: column;
   padding: 5vw;
   align-items: center;
   justify-content: center;
-  h1 {
-    font-size: calc((100vw - 480px) / (1280 - 48) * (50 - 23) + 23px);
+  .h1Link {
+    font-size: $h1_fontSize;
+    font-weight: bold;
+  }
+  .h1Link:hover {
+    opacity: 0.8;
+  }
+  span {
+    a {
+      font-weight: bold;
+      transition: opacity 0.4s ease-in-out;
+    }
+    a:hover {
+      opacity: 0.8;
+    }
   }
 }

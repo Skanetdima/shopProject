@@ -1,5 +1,6 @@
 import { FirstShopContainer } from "@/app/firstShopContainer/firstShopContainer";
 import Head from "next/head";
+import { SecondFilterShopContainer } from "@/app/secondFilterShopContainer/secondFilterShopContainer";
 
 const Shop: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const Shop: React.FC = () => {
       </Head>
       <main>
         <FirstShopContainer />
+        <SecondFilterShopContainer />
       </main>
     </>
   );

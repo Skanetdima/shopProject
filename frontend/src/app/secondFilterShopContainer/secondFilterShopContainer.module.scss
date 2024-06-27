@@ -1,0 +1,57 @@
+@use "../styles/variables.scss" as *;
+
+.secondFilterShopContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75vw 1.25vw;
+  background-color: $filter_background;
+  .secondFilterSection {
+    display: flex;
+    gap: 1vw;
+    button {
+      cursor: pointer;
+      border: none;
+      display: flex;
+      background-color: transparent;
+      align-items: center;
+      justify-content: center;
+    }
+    .secondFilterButton {
+      gap: 0.5vw;
+    }
+    .secondFilterViewOptions {
+      display: flex;
+      flex-direction: row;
+      gap: 1vw;
+      padding: 0 1vw;
+      border-right: 2px solid $third-description-p;
+    }
+  }
+  .secondShowSortSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    #secondShow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $third-description-p;
+      overflow: hidden;
+      text-align: center;
+      width: 2.5vw;
+      height: 2.5vw;
+    }
+    #secondSortBy {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $third-description-p;
+      overflow: hidden;
+      text-align: center;
+      width: 5vw;
+      height: 2.5vw;
+    }
+  }
+}

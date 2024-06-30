@@ -16,7 +16,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <title>My Application</title>
         <meta name="description" content="Default description" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.svg" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
       </Head>
       <HeaderComponent />
       <div className={poppins.className}>{children}</div>

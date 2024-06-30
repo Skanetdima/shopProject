@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { thirdComponents } from "./data";
 import "./thirdContainer.scss";
 
@@ -17,7 +18,7 @@ export const ThirdContainer = () => {
           </span>
         </section>
         <div className="thirdOverlay">
-          <a href="/">Add to cart</a>
+          <Link href="/">Add to cart</Link>
         </div>
       </li>
     );
@@ -26,7 +27,7 @@ export const ThirdContainer = () => {
     <div className="thirdContainer">
       <h2>Our Products</h2>
       <ul>{ulItems}</ul>
-      <a href="#">Show More</a>
+      <Link href="/shop">Show More</Link>
     </div>
   );
 };

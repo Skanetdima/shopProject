@@ -8,6 +8,7 @@ import styles from "./fourthContainer.module.scss";
 import "./swiper.scss";
 import { Pagination, Navigation, EffectCoverflow } from "swiper/modules";
 import { fourthData } from "./data";
+import Link from "next/link";
 
 export const FourthContainer = () => {
   const sliderData = fourthData.map((obj, index) => {
@@ -31,7 +32,7 @@ export const FourthContainer = () => {
           Our designer already made a lot of beautiful prototipe of rooms that
           inspire you
         </p>
-        <a href="">Explore More</a>
+        <Link href="/shop">Explore More</Link>
       </div>
       <Swiper
         effect={"coverflow"}

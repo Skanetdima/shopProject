@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { thirdShopComponents } from "./data";
 import styles from "./thirdShopContainer.module.scss";
 
@@ -17,7 +18,7 @@ export const ThirdShopContainer = () => {
           </span>
         </section>
         <div className={styles.thirdOverlay}>
-          <a href="/">Add to cart</a>
+          <Link href="/">Add to cart</Link>
         </div>
       </li>
     );

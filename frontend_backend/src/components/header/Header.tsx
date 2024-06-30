@@ -20,7 +20,7 @@ const HeaderComponent = () => {
           <Link href="/">Home</Link>
           <Link href="/shop">Shop</Link>
           <Link href="/about">About</Link>
-          <a href="#">Contact</a>
+          <Link href="#">Contact</Link>
         </nav>
         <div className="headerUserInfo">
           <a

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./firstShopContainer.module.scss";
 
 export const FirstShopContainer = () => {
@@ -6,11 +7,11 @@ export const FirstShopContainer = () => {
       className={styles.firstShopContainer}
       style={{ background: "url(/shopPreview.png) no-repeat center/cover" }}
     >
-      <a className={styles.h1Link} href="/shop">
+      <Link className={styles.h1Link} href="/shop">
         Shop
-      </a>
+      </Link>
       <span>
-        <a href="/">{"Home >"}</a> Shop
+        <Link href="/">{"Home >"}</Link> Shop
       </span>
     </div>
   );

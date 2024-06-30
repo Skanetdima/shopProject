@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./firstContainer.scss";
 
 export const FirstContainer = () => {
@@ -12,9 +13,9 @@ export const FirstContainer = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut <br />{" "}
           elit tellus, luctus nec ullamcorper mattis.
         </p>
-        <a className="firstBuyNowBtn" href="#">
+        <Link className="firstBuyNowBtn" href="/shop">
           buy now
-        </a>
+        </Link>
       </div>
     </div>
   );
